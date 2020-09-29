@@ -6,19 +6,17 @@ let arrWordsNum = ["two", "one", "one", "three", "two"];
 
 const arrNum = arrWordsNum.map (element => {
 
-if (element === "one"){
-    return 1;
-}
+    if (element === "one"){
+        return 1;
+    }
 
-else if (element === "two"){
-    return 2;
-}
+    else if (element === "two"){
+        return 2;
+    }
 
-else if (element === "three"){
-    return 3;
-}
-
-
+    else if (element === "three"){
+        return 3;
+    }
 
 //return "two" === 2 "one" ===1 "three" === 3
 });
@@ -26,7 +24,7 @@ else if (element === "three"){
 
 const sum = arrNum.reduce ((sum,element)=> {
 
-return sum + element;
+    return sum + element;
 
 });
 

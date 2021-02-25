@@ -1,13 +1,40 @@
-function checkIfPrime (num) {
-    if (num === 2 || num === 3) {
-        return "is prime";
-    } else if(num % 2 === 0 || num % 3 === 0){
-        return "is not prime";
+function checkIfPrime(num) {
+    for (let i = 2; i < num; i++) {
+      if (num % i === 0) {
+        return false;
+      }
     }
-    else {
-        return "is prime";
-    }
-}
-
-
-console.log(checkIfPrime(89));
+  
+    return true;
+  }
+  
+  const testArr = [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97
+  ];
+  
+  const results = testArr.map(checkIfPrime);
+  console.log(results);

@@ -55,6 +55,21 @@ function foo2()
 }
 
 console.log(foo1());//{ bar: 'hello'}
-console.log(foo2());//undefined
+console.log(foo2());//undefined ??
 
 
+
+
+
+
+
+let arr1 = [0,1,2,3];
+let arr2 = [0,1,2,3];
+
+arr1 = arr2;
+
+arr1.shift();
+arr2.pop();
+
+console.log(arr1);//??
+console.log(arr1);//??

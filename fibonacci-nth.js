@@ -26,16 +26,27 @@ function fibonacci(n) {
 console.log(fibonacci(10));
 
 
-let arr1 = [0,1,2,3];
-let arr2 = [0,1,2,3];
 
-arr1 = arr2;
 
-arr1.shift();
-arr2.pop();
+function iterativeFibonacci(n) {
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+  
+    let previous = 0;
+    let current = 1;
+    for (let i = n; i > 1; i--) {
+      let next = previous + current;
+      previous = current;
+      current = next;
+    }
+    return current;
+  }
 
-console.log(arr1);//??
-console.log(arr1);//??
 
+  function recursiveFibonacci(n) {
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    return recursiveFibonacci(n - 2) + recursiveFibonacci(n - 1);
+  }
 
 

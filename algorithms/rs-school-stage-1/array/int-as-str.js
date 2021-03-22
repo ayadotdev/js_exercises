@@ -14,4 +14,4 @@ function divCon(arr){
     console.log(typeof(diff))
     return diff;
 }
-console.log(divCon([9, 3, '7', '3'])); //2 why result is negative??
+console.log(divCon([9, 3, '77', '3'])); //2 why result is negative??

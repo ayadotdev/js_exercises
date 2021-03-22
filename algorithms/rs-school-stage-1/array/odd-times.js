@@ -1,4 +1,4 @@
-function findOutlier(arr) {
+function findOdd(arr) {
     let map = new Map();
 
     arr.forEach((el) => {
@@ -18,6 +18,6 @@ function findOutlier(arr) {
 }
 
 
-console.log(findOutlier([0,1,2]));
+console.log(findOdd([0,1,2]));
 
-
+//??? why map

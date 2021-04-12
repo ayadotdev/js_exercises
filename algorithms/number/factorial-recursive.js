@@ -9,4 +9,4 @@ function factorial(num){
 // 4 * 3 * 2 * 1
 
 
-console.log(factorial(4));
+console.log(factorial(2));

@@ -27,4 +27,4 @@ function calc(str) {
     return diff;
 }
 
-console.log(calc("aaaaaddddr"));
+console.log(calc("a"));

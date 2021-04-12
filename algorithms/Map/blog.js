@@ -47,20 +47,15 @@ function returnArticleAndUsers() {
         }
     }
 
-  blogInfo.forEach(item => {
+    blogInfo.forEach(item => {
         let article = item.article;
         let user = item.user;
-        if(article === theMostReadArt){
+        if (article === theMostReadArt) {
             usersReadThatArt.push(user);
         }
-
-        
     })
 
-
-   output.push(theMostReadArt, usersReadThatArt);
-
-
+    output.push(theMostReadArt, usersReadThatArt);
     return output;
 }
 

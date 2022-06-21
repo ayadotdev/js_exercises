@@ -13,7 +13,6 @@ function migratoryBirds(arr) {
     let theBiggestOccur = 0;
     let birdsId = [];
     for ( const [birdType,currentOccur] of birdsJournal){
-        console.log("heu")
         if(currentOccur > theBiggestOccur){
             birdsId = [];
             theBiggestOccur = currentOccur;
